@@ -1,0 +1,10 @@
+<!-- delete-person.component.html -->
+<div class="container">
+    <h1>Delete Person</h1>
+    <p>Are you sure you want to delete <strong>{{ name }}</strong>?</p>
+    <label >Enter the name of the person to confirm:</label>
+    <input type="text" (keyup)="onKey($event)"/>
+    <button (click)="deletePerson()">Delete</button>
+    <br>
+    {{errorString}} 
+</div>
